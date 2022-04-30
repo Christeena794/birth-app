@@ -1,19 +1,29 @@
-import React from 'react';
-import { setConstantValue } from 'typescript';
+import React, { useEffect } from 'react';
+import { isTemplateExpression, setConstantValue } from 'typescript';
 
-export default function InputField({name,text}) {
-function Update() {
-  return (
-    <div>
-     <div>
-                  <input type="text" />
-                  <button type='text' value={state} onChange={(e) => setConstantValue(e.target.value)}>Update</button>
-              {state}
-              
-              </div>    
-    </div>
-}
-  );
-}
+// const Update:React.FC<IProps > = (item) =>{
+//     const[find,setFind] = useState("");
+//     const getFind =(e.React.FormEventHandler<HTMLFormElement>) =>
+//     e.preventDefault();
 
-export default Update;
+//     useEffect(() => {
+//         setFind(item.userstate.find((find) => item.name=== (name)))
+
+//     },[item.Data])
+
+//     const getUpdate =(e.React.MouseEvent<HTMLButtonElement>)=>
+//     E.preventDefault();
+//     const current = new Date();
+//     const Date = ~${current.getDate()}/$(current.getMonth()+1}/${current.getfulYear()}~;)
+
+//     return
+//     <div>
+//         <input type="text" className='input' value={find} onChange={getFind}/>
+//         <button onClick={(date) => getUpdate}>Update</button>
+//     </div>
+    
+//     })
+// }
+
+
+// export default Update;

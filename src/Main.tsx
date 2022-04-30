@@ -2,44 +2,52 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Details from "./Details";
 import "./Main.css";
+import IDetails from "./types";
 
 type Props = {};
-const Main = (props: Props) => {
+const Main: React.FC<{item:IDetails}> = (props) => {
+
+
+    {data.map(date => {
   return (
    <div className="main">
-       <form>
+       
            <div>
-          <textarea  required></textarea>
+          <textarea  required>
+              <div>
+                        {date.name}
+                        {date.birthday}
+                    </div>
+          </textarea>
            
            </div>
            <div className="app-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Sun</th>
-                            <th>Mon</th>
-                            <th>Tue</th>
-                            <th>Wed</th>
-                            <th>Thurs</th>
-                            <th>Fri</th> 
-                            <th>Sat</th>                       
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                            <td> </td>
-                        </tr>
-                    </tbody>
-                </table>
+           <div className='card'>
+                        <div className='Days'>Mon</div>
+                    </div>
+                    <div className='card'>
+                        <div className='Days'>Tues</div>
+                    </div>
+                    <div className='card'>
+                        <div className='Days'>Wed</div>
+                    </div>
+                    <div className='card'>
+                        <div className='Days'>Thur</div>
+                    </div>
+                </div>
+                    <div className='card'>
+                        <div className='Days'>Fri</div>
+                    </div>
+                    <div className='card'>
+                        <div className='Days'>Sat</div>
+                    </div>
+                    <div className='card'>
+                        <div className='Days'>Sunday</div>
+                    </div>
+
            </div>
-       </form>
-   </div>
+       
+
   
   )
 
